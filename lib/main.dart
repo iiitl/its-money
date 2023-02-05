@@ -17,14 +17,12 @@ class MyApp extends StatelessWidget {
       duration: 3000,
       imageSize: 600,
       imageSrc: "assets/its_money.png",
-      text: "LOADING...",
+      text: "CREATING...",
       textType: TextType.TyperAnimatedText,
       textStyle: const TextStyle(
           color: Colors.black, fontSize: 30.0, fontFamily: 'MinecraftTen'),
       backgroundColor: Colors.yellow,
     );
-
-
 
     return MaterialApp(
       debugShowCheckedModeBanner: true,
