@@ -12,6 +12,7 @@ class Instructions extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.yellow,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Padding(
             padding: EdgeInsets.all(40.0),
@@ -30,7 +31,7 @@ class Instructions extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(left: 15),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Text(
                   '1. Tap on the CALCULATE button!',
