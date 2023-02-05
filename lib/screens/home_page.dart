@@ -46,6 +46,7 @@ class _HomePageState extends State<HomePage> {
             fontSize: 30,
           ),
         ),
+        centerTitle: true,
       ),
       body: GestureDetector(
         child: Column(
