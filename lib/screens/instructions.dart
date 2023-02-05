@@ -86,13 +86,19 @@ class Instructions extends StatelessWidget {
                   ),
                 );
               },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.red),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  )
+                )
               ),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: BorderedText(
                   strokeWidth: 2.0,
+
                   strokeColor: Colors.yellowAccent,
                   child: const Text(
                     'CALCULATE',
