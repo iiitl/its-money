@@ -18,14 +18,18 @@ class MyApp extends StatelessWidget {
       imageSize: 600,
       imageSrc: "assets/its_money.png",
       text: "CREATING...",
-      textType: TextType.TyperAnimatedText,
-      textStyle: const TextStyle(
-          color: Colors.black, fontSize: 30.0, fontFamily: 'MinecraftTen'),
+      textType: TextType.ColorizeAnimationText,
+      textStyle: const TextStyle(fontSize: 30.0, fontFamily: 'MinecraftTen'),
+      colors: const [
+        Colors.purple,
+        Colors.yellow,
+        Colors.blue,
+      ],
       backgroundColor: Colors.yellow,
     );
 
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: example1,
       routes: {
         '/home_page': (context) => const HomePage(),
