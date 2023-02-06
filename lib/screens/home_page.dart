@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                       color: cpCardPressed ? cardSelectedColor : cpCardColor,
                       childCard: const TopCardContent(
                         topPadding: 17,
-                        imagePath: 'assets/cp.png',
+                        imagePath: 'assets/p1.png',
                         title: 'CP',
                       ),
                     ),
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                           webdCardPressed ? cardSelectedColor : webdCardColor,
                       childCard: const TopCardContent(
                         topPadding: 0,
-                        imagePath: 'assets/webd.png',
+                        imagePath: 'assets/p2.png',
                         title: 'DEV',
                       ),
                     ),
