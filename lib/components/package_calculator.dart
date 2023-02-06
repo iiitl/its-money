@@ -20,13 +20,13 @@ class PackageCalculator{
 
   String getFeedback(){
     if(_package>=40){
-      return 'Your package is amazing, now get yourself some apple products!';
+      return 'You Got a Super dream Package, now get your parents some gifts and keep improving';
     }
     else if(_package<=15){
-      return 'You\'ve got some real potential, just upskill yourself';
+      return 'You got a bit low package but still you can do mucch better, just work on  upskilling yourself';
     }
     else{
-      return 'It\'s just about some promotions, anyways you\'ve done really well';
+      return 'It\'s Just a start You can get much more than that soon. keep working Hard';
     }
   }
 

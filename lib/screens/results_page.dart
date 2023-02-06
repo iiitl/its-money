@@ -36,12 +36,23 @@ class ResultsPage extends StatelessWidget {
           children: [
             Expanded(
               child: Container(
-                padding: const EdgeInsets.all(33.0),
-                alignment: Alignment.bottomLeft,
-                child: const Text(
+                padding: const EdgeInsets.all(15.0),
+                alignment: Alignment.center,
+                child: Text(
                   'YOUR RESULTS',
-                  style: titleTextStyle,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    letterSpacing: 1.5,
+                    fontSize: 40,
+                    foreground: Paint()
+                      ..style = PaintingStyle.stroke
+                      ..color = Colors.blue
+                      ..strokeWidth = 4,
+
+
+                  ),
                 ),
+
               ),
             ),
             Expanded(
