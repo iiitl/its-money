@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                       color: cpCardPressed ? cardSelectedColor : cpCardColor,
                       childCard: const TopCardContent(
                         topPadding: 17,
-                        imagePath: 'assets/p1.png',
+                        imagePath: 'assets/c.png',
                         title: 'CP',
                       ),
                     ),
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                           webdCardPressed ? cardSelectedColor : webdCardColor,
                       childCard: const TopCardContent(
                         topPadding: 0,
-                        imagePath: 'assets/p2.png',
+                        imagePath: 'assets/w.png',
                         title: 'DEV',
                       ),
                     ),
@@ -304,7 +304,10 @@ class _HomePageState extends State<HomePage> {
               ],
             )),
             BottomButton(
+
               title: 'CALCULATE YOUR PACKAGE',
+
+
               onTap: () {
                 PackageCalculator calc = PackageCalculator(
                     interest: interest, hours: hours, experience: experience);
