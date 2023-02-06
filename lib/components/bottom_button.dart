@@ -16,25 +16,28 @@ class BottomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-        child: Center(
-          child: BorderedText(
-            strokeWidth: 2.0,
-            strokeColor: moneyColor,
-            child: Text(
-              title,
-              style: titleStyle.copyWith(
-                fontSize: 25.0,
-                letterSpacing: 1.4,
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Container(
+          child: Center(
+            child: BorderedText(
+              strokeWidth: 2.0,
+              strokeColor: moneyColor,
+              child: Text(
+                title,
+                style: titleStyle.copyWith(
+                  fontSize: 25.0,
+                  letterSpacing: 1.4,
+                ),
               ),
             ),
           ),
+          color: Colors.orangeAccent,
+          width: double.infinity,
+          margin: const EdgeInsets.only(top: 10.0),
+          padding: const EdgeInsets.only(bottom: 20.0),
+          height: calculateButtonHeight,
         ),
-        color: Colors.orangeAccent,
-        width: double.infinity,
-        margin: const EdgeInsets.only(top: 10.0),
-        padding: const EdgeInsets.only(bottom: 20.0),
-        height: calculateButtonHeight,
       ),
     );
   }
