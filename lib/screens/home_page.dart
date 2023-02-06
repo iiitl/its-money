@@ -185,33 +185,40 @@ class _HomePageState extends State<HomePage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            RoundIconButton(
-                              child: const Icon(
-                                Icons.add,
-                                color: Colors.black,
-                                size: 30,
+                            ElevatedButton(
+                                child: const Icon(
+                                    Icons.add,
+                                  color: Colors.black,
+                                  size: 30,
+                                ),
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.orangeAccent,
+                                shape: const CircleBorder(),
+                                fixedSize: const Size(55, 55)
                               ),
-                              iconColor: Colors.orangeAccent,
-                              parameter: hours,
-                              add: true,
+
                               onPressed: () {
-                                setState(() {
-                                  hours < 10 ? hours++ : hours;
-                                });
+                                  setState(() {
+                                    hours < 10 ? hours++ : hours;
+                                  });
                               },
                             ),
+
                             const SizedBox(
                               width: 10,
                             ),
-                            RoundIconButton(
+                            ElevatedButton(
                               child: const Icon(
                                 Icons.remove,
                                 color: Colors.black,
                                 size: 30,
                               ),
-                              iconColor: Colors.orangeAccent,
-                              parameter: hours,
-                              add: false,
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.orangeAccent,
+                                  shape: const CircleBorder(),
+                                  fixedSize: const Size(55, 55)
+                              ),
+
                               onPressed: () {
                                 setState(() {
                                   hours > 0 ? hours-- : hours;
@@ -249,36 +256,42 @@ class _HomePageState extends State<HomePage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            RoundIconButton(
+                            ElevatedButton(
                               child: const Icon(
                                 Icons.add,
                                 color: Colors.black,
-                                size: 35,
+                                size: 30,
                               ),
-                              iconColor: Colors.orangeAccent,
-                              parameter: experience,
-                              add: true,
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.orangeAccent,
+                                  shape: const CircleBorder(),
+                                  fixedSize: const Size(55, 55)
+                              ),
+
                               onPressed: () {
                                 setState(() {
-                                  experience < 10 ? experience++ : experience;
+                                  hours < 10 ? experience++ : experience;
                                 });
                               },
                             ),
                             const SizedBox(
                               width: 10,
                             ),
-                            RoundIconButton(
+                            ElevatedButton(
                               child: const Icon(
                                 Icons.remove,
                                 color: Colors.black,
-                                size: 35,
+                                size: 30,
                               ),
-                              iconColor: Colors.orangeAccent,
-                              parameter: experience,
-                              add: false,
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.orangeAccent,
+                                  shape: const CircleBorder(),
+                                  fixedSize: const Size(55, 55)
+                              ),
+
                               onPressed: () {
                                 setState(() {
-                                  experience > 0 ? experience-- : experience;
+                                  hours > 0 ? experience-- : experience;
                                 });
                               },
                             ),
