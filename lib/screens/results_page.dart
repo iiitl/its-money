@@ -36,11 +36,19 @@ class ResultsPage extends StatelessWidget {
           children: [
             Expanded(
               child: Container(
-                padding: const EdgeInsets.all(33.0),
-                alignment: Alignment.bottomLeft,
+                padding: const EdgeInsets.all(15.0),
+                alignment: Alignment.center,
                 child: const Text(
                   'YOUR RESULTS',
-                  style: titleTextStyle,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    letterSpacing: 1.5,
+                    color: Colors.black,
+                    fontSize: 40,
+                    fontFamily: 'MinecraftTen',
+                    // foreground: Paint()
+                    //   ..strokeWidth = 2,
+                  ),
                 ),
               ),
             ),
